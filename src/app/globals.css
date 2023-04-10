@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @layer components {
+    /* .upnotify-primary {
+        @apply py-2 px-4  w-full border border-[#D0D5DD] rounded-md bg-gradient-to-r from-[#2D66F8] from-100% via-[#2A5EE5] via-100% to-[#2554CC] to-100%;
+    } */
+    .upnotify-primary {
+        @apply py-2 px-4  w-full border border-[#D0D5DD] rounded-lg bg-blue-800 text-white ;
+    }
+    .upnotify-secondary {
+        @apply  py-2 px-4  w-full border border-[#D0D5DD] rounded-lg;
+    }
+  }
